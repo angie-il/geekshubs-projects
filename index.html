@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Messsaging App</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="main">
+            <section class="sidebar">
+                <article class="sidebar-info">
+                    <section class="sidebar-space">
+                        <div class="sidebar-space-info">
+                        <h4>GeeksHubs Academy</h4>
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        </div>
+                        <p class="sidebar-user-info-additional">
+                        <i class="fa fa-circle" aria-hidden="true"></i>Angie Iliadi
+                        </p>
+                </section>
+                <section class="channels">
+                    <h4 class="channels-header">
+                     Channels
+                     <button id="myBtn" class="btn"><i class="fa fa-plus"></i></button>
+                     <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <form action="." class="create-form">
+                            <h3 class="modal-header"> Create Channel</h3>
+                            <span class="close">&times;</span>
+                            <small class="small-description">Channels are where your members communicate. They are best when organized around a topic - #marketing, for example.</small>
+                            <div class="modal-body">
+                                <fieldset>
+                                    <div class="form-group">
+                                      <label for="channel-name" class="label">Name</label>
+                                      <div class="form-group-control">
+                                        <input
+                                          type="text"
+                                          placeholder="e.g. iron-fist"
+                                          id="channel-name"
+                                          name="channel-name"
+                                          class="form-control field"
+                                          maxlength="80"
+                                          required
+                                        />
+                                        <span class="number">80</span>
+                                      </div>
+                                    </div>
+                        
+                                    <div class="form-group">
+                                      <label for="channel-description" class="label">Description</label>
+                                      <input
+                                        type="text"
+                                        placeholder="What's this channel about?"
+                                        id="channel-description"
+                                        name="channel-description"
+                                        class="form-control"
+                                        required
+                                      />
+                                    </div>
+                                    <div class="privacy">
+                                      <p class="privacy-label">
+                                        Make private
+                                        <span
+                                          >When a channel is set to private, it can only be viewed or
+                                          joined by invitation.</span
+                                        >
+                                      </p>
+                                      <section class="privacy-wrapper">
+                                        <input
+                                          type="checkbox"
+                                          name="privacy-checkbox"
+                                          id="privacy-checkbox"
+                                          class="switch-input"
+                                          checked="checked"
+                                        />
+                                        <label for="privacy-checkbox" class="switch-label"
+                                          >Switch</label
+                                        >
+                                      </section>
+                                    </div>
+                                  </fieldset>
+                                  <input type="button" onclick='add_arr();' value= "Create" id="submit-btn"></button>
+                            </div>
+                          </div>
+                     </div>
+                    </h4>
+                    <ul>
+                    <li>
+                       <i class="fa fa-hashtag"></i>general
+                    </li>
+                    <li>
+                      <span id="channels"></span></span>
+                   </li>
+                    </ul>
+                </section>
+                <section class="direct-messages">
+                    <h4 class="direct-messages-title">
+                     Direct Messages
+                     <i class="fa fa-plus"></i>
+                    </h4>
+                    <ul>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-circle online"></i>Angie (You)</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-circle online"></i>
+                        Aida</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-circle offline"></i>
+                            John Gol</a>
+                        </li>
+                    </ul>
+                </section>
+                </article>
+            </section>
+        </header>
+        <script src="script.js"></script>
+    </body>
+</html>
