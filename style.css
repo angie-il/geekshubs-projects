@@ -83,3 +83,42 @@ main {
     font-size: 0.5rem;
     padding-right: 0.3rem;
 }
+
+.channels {
+    margin-left: 0.5rem;
+}
+
+.channels-header {
+    display: flex;
+    align-items: center;
+    color: #cfc3cf;
+    margin-top: 0.7rem;
+}
+
+.channels .btn {
+    margin-left: 6.5rem;
+    color: #cfc3cf;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.channels .btn:hover {
+    color: #e0d9e0;
+}
+
+.channels ul {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.channels li {
+    padding: 0.25rem 0;
+    color: #cfc3cf;
+    font-size: 13px;
+}
+
+.channels ul i {
+    margin-right: 0.5rem;
+    font-size: 10px;
+}
